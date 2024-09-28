@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Box</title>
+    <style>
+        body {
+            background-color: #D3B6E0; /* Light purple background */
+        }
+
+        .main-box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+            grid-template-rows: 200px 200px; /* Explicit height for rows */
+            gap: 20px; /* Gap between items */
+            width: 70%; /* Width of the container */
+            margin: 50px auto; /* Centering the grid */
+            padding: 20px;
+            border: 10px solid #816A97; /* Dark border */
+            box-sizing: border-box;
+            background-color: #a687bb;
+        }
+
+        .main-box > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            color: black;
+            border: 3px solid black;
+        }
+
+        /* Specific colors and sizes */
+        .four {
+            background-color: #FF5733; /* Orange-red background */
+            grid-column: span 2; /* Spans across 2 columns */
+            grid-row: 1; /* First row */
+            height: 200px; /* Set height */
+        }
+
+        .six {
+            background-color: #FAD4D0; /* Light pink background */
+            grid-column: 3; /* Third column */
+            grid-row: span 2; /* Spans across both rows */
+            height: 420px; /* Taller to match the layout */
+        }
+
+        .one {
+            background-color: #0041FF; /* Bright blue background */
+            height: 200px; /* Explicit height */
+        }
+
+        .five {
+            background-color: #7D3C27; /* Brownish background */
+            height: 200px; /* Explicit height */
+        }
+    </style>
+</head>
+<body>
+    <div class="main-box">
+        <div class="four">4</div>
+        <div class="six">6</div>
+        <div class="one">1</div>
+        <div class="five">5</div>
+    </div>
+</body>
+</html>
+
